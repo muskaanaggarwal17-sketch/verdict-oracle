@@ -1,0 +1,11 @@
+{
+  "dataset": "Verdict_Oracle_Preprocessed.xlsx",
+  "dataset_sha256": "85958b8f7cbb54011ba6c9693097f5e423a855e2243542290d20f03ff1ab5a7e",
+  "verified_drive_cache_folder": "https://drive.google.com/drive/folders/1lPVSVbgvyJUheAYqG7gXVN2PILni8T1w",
+  "verified_manifest_file_id": "1s2-rOPM7EypqP2mhJmGTw4RaqJhTBATH",
+  "retained_pdf_folder_id": "1RvRbYXOgZmuutN2LQcdBO_eitIyIYt_E",
+  "extracted_text_folder_id": "19Qu5d2xe8m06Gguhk8OUEStumHc6rbp9",
+  "verified_manifest_matches_observed": 338,
+  "pdf_import_completed": false,
+  "notes": "Owner runs Import_Judgments_Once.ipynb to add text excerpts and verified PDF links; app does not connect to Drive."
+}

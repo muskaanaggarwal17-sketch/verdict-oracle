@@ -1,0 +1,40 @@
+{
+  "divorce": {
+    "status": "trained",
+    "train_n": 494,
+    "test_n": 127,
+    "accuracy": 0.7165354330708661,
+    "balanced_accuracy": 0.7141439205955336,
+    "macro_f1": 0.7125251509054327,
+    "weighted_f1": 0.7133272073385194,
+    "roc_auc": 0.7638957816377171,
+    "classes": [
+      "granted",
+      "refused"
+    ]
+  },
+  "maintenance_monthly": {
+    "status": "trained",
+    "train_n": 62,
+    "test_n": 8,
+    "mae_inr": 3057.7814439861627,
+    "median_ae_inr": 760.6112022061355,
+    "r2": -0.08384744990112147,
+    "median_training_award_inr": 2500.0
+  },
+  "maintenance_lump_sum_or_settlement": {
+    "status": "trained",
+    "train_n": 49,
+    "test_n": 14,
+    "mae_inr": 377969.44687072,
+    "median_ae_inr": 245649.6652742546,
+    "r2": 0.0573373754728046,
+    "median_training_award_inr": 400000.0
+  },
+  "maintenance_annual": {
+    "status": "insufficient labeled examples",
+    "train_n": 0,
+    "test_n": 0
+  }
+}
+Training-only case index: 555
