@@ -1,0 +1,13 @@
+{
+  "source_cache": "https://drive.google.com/drive/folders/1lPVSVbgvyJUheAYqG7gXVN2PILni8T1w",
+  "verified_manifest_rows": 338,
+  "training_case_records": 555,
+  "indexed_training_pdfs": 163,
+  "matching_status_counts": {
+    "indexed_verified_training_case": 163,
+    "not_in_training_split_or_citation_variant": 175
+  },
+  "rule": "Exact normalized case name and full citation; training partition only. No test PDFs indexed.",
+  "pdf_bytes_bundled": false,
+  "excerpt_text_bundled": true
+}
