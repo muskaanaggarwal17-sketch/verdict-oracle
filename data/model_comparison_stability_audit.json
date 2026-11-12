@@ -1,0 +1,1140 @@
+{
+  "monthly": {
+    "period": "monthly",
+    "train_n": 62,
+    "test_n": 8,
+    "cpi_2026_provisional": 238.6539723548226,
+    "training_median": 4872.239680424559,
+    "cv_median_baseline_mae": 6345.788585911743,
+    "candidates": [
+      {
+        "name": "quantile_log_a0.1",
+        "method": "quantile",
+        "alpha": 0.1,
+        "scale": "log",
+        "cv_mae_mean": 6348.479673002229,
+        "cv_mae_sd": 2591.3156772392513,
+        "cv_medae_mean": 2647.4985632418607,
+        "fold_mae": [
+          8899.797984835694,
+          4734.819318888037,
+          8180.957358599105,
+          3578.3440296860786
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 16,
+            "actual_min": 676.7548945385934,
+            "actual_max": 54578.41727461446,
+            "raw_prediction_min": 8.336330021598332,
+            "raw_prediction_max": 8.443015112124684,
+            "predicted_min": 4171.7477122479,
+            "predicted_max": 4641.531656841074,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 50406.66956236656
+          },
+          {
+            "fold": 2,
+            "n": 16,
+            "actual_min": 358.6063129024077,
+            "actual_max": 21636.666412211198,
+            "raw_prediction_min": 8.598414075533356,
+            "raw_prediction_max": 8.598414075533356,
+            "predicted_min": 5422.052216649704,
+            "predicted_max": 5422.052216649704,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 16214.614195561495
+          },
+          {
+            "fold": 3,
+            "n": 15,
+            "actual_min": 0.0,
+            "actual_max": 51233.74938722348,
+            "raw_prediction_min": 8.443015112124684,
+            "raw_prediction_max": 8.740770792885009,
+            "predicted_min": 4641.531656841074,
+            "predicted_max": 6251.7134022997525,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 46592.2177303824
+          },
+          {
+            "fold": 4,
+            "n": 15,
+            "actual_min": 774.5788880928152,
+            "actual_max": 20858.738561239523,
+            "raw_prediction_min": 8.584167971193093,
+            "raw_prediction_max": 8.798393346614134,
+            "predicted_min": 5345.342553220491,
+            "predicted_max": 6622.59363370213,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 14236.144927537393
+          }
+        ]
+      },
+      {
+        "name": "ridge_raw_a10",
+        "method": "ridge",
+        "alpha": 10,
+        "scale": "raw",
+        "cv_mae_mean": 7285.735283704453,
+        "cv_mae_sd": 2395.587770623521,
+        "cv_medae_mean": 5467.241655481056,
+        "fold_mae": [
+          7944.768460429293,
+          7623.626098640267,
+          9630.783323628053,
+          3943.7632521202004
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 16,
+            "actual_min": 676.7548945385934,
+            "actual_max": 54578.41727461446,
+            "raw_prediction_min": 5080.977374672717,
+            "raw_prediction_max": 13097.86386350108,
+            "predicted_min": 5080.977374672717,
+            "predicted_max": 13097.86386350108,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 46736.91157006084
+          },
+          {
+            "fold": 2,
+            "n": 16,
+            "actual_min": 358.6063129024077,
+            "actual_max": 21636.666412211198,
+            "raw_prediction_min": 2934.363652415781,
+            "raw_prediction_max": 25069.46456671269,
+            "predicted_min": 2934.363652415781,
+            "predicted_max": 25069.46456671269,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 15936.863258016347
+          },
+          {
+            "fold": 3,
+            "n": 15,
+            "actual_min": 0.0,
+            "actual_max": 51233.74938722348,
+            "raw_prediction_min": -1552.9957432209667,
+            "raw_prediction_max": 85799.50669121697,
+            "predicted_min": 0.0,
+            "predicted_max": 85799.50669121697,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 1,
+            "largest_absolute_error": 49738.39600419831
+          },
+          {
+            "fold": 4,
+            "n": 15,
+            "actual_min": 774.5788880928152,
+            "actual_max": 20858.738561239523,
+            "raw_prediction_min": 3080.603286425954,
+            "raw_prediction_max": 11931.181918551978,
+            "predicted_min": 3080.603286425954,
+            "predicted_max": 11931.181918551978,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 10449.421519607768
+          }
+        ]
+      },
+      {
+        "name": "ridge_log_a100",
+        "method": "ridge",
+        "alpha": 100,
+        "scale": "log",
+        "cv_mae_mean": 9130.194621238808,
+        "cv_mae_sd": 7472.240665799933,
+        "cv_medae_mean": 2712.8625523529663,
+        "fold_mae": [
+          8844.013400956726,
+          4414.611620700482,
+          19775.881711412334,
+          3486.271751885685
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 16,
+            "actual_min": 676.7548945385934,
+            "actual_max": 54578.41727461446,
+            "raw_prediction_min": 8.218165387089842,
+            "raw_prediction_max": 8.68017803973536,
+            "predicted_min": 3706.6939558089443,
+            "predicted_max": 5884.094278696354,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 50616.714978478594
+          },
+          {
+            "fold": 2,
+            "n": 16,
+            "actual_min": 358.6063129024077,
+            "actual_max": 21636.666412211198,
+            "raw_prediction_min": 7.891500597937984,
+            "raw_prediction_max": 9.119249692280075,
+            "predicted_min": 2673.4541914671904,
+            "predicted_max": 9128.349224843714,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 16816.12613917413
+          },
+          {
+            "fold": 3,
+            "n": 15,
+            "actual_min": 0.0,
+            "actual_max": 51233.74938722348,
+            "raw_prediction_min": 7.804759263965593,
+            "raw_prediction_max": 12.394005690258416,
+            "predicted_min": 2451.245131114368,
+            "predicted_max": 241349.54283773608,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 1,
+            "largest_absolute_error": 205288.43215071742
+          },
+          {
+            "fold": 4,
+            "n": 15,
+            "actual_min": 774.5788880928152,
+            "actual_max": 20858.738561239523,
+            "raw_prediction_min": 8.33433122379924,
+            "raw_prediction_max": 8.640328168358451,
+            "predicted_min": 4163.415563219104,
+            "predicted_max": 5654.185372853768,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 15204.553188385755
+          }
+        ]
+      },
+      {
+        "name": "ridge_log_a10",
+        "method": "ridge",
+        "alpha": 10,
+        "scale": "log",
+        "cv_mae_mean": 349087.96587164706,
+        "cv_mae_sd": 686679.1516080888,
+        "cv_medae_mean": 3161.666858008905,
+        "fold_mae": [
+          8506.984325403693,
+          4756.778349594101,
+          1379102.4335265832,
+          3985.6672850072696
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 16,
+            "actual_min": 676.7548945385934,
+            "actual_max": 54578.41727461446,
+            "raw_prediction_min": 7.856755384562604,
+            "raw_prediction_max": 9.46412280503695,
+            "predicted_min": 2582.125514808099,
+            "predicted_max": 12887.913536137068,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 50899.1567048046
+          },
+          {
+            "fold": 2,
+            "n": 16,
+            "actual_min": 358.6063129024077,
+            "actual_max": 21636.666412211198,
+            "raw_prediction_min": 6.474878371561174,
+            "raw_prediction_max": 9.64394630862726,
+            "predicted_min": 647.6403297021994,
+            "predicted_max": 15427.107831283993,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 17004.604928321
+          },
+          {
+            "fold": 3,
+            "n": 15,
+            "actual_min": 0.0,
+            "actual_max": 51233.74938722348,
+            "raw_prediction_min": 6.750776350740297,
+            "raw_prediction_max": 16.842328627336528,
+            "predicted_min": 853.7220691246649,
+            "predicted_max": 20631479.096516114,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 1,
+            "largest_absolute_error": 20595417.985829096
+          },
+          {
+            "fold": 4,
+            "n": 15,
+            "actual_min": 774.5788880928152,
+            "actual_max": 20858.738561239523,
+            "raw_prediction_min": 7.739916444493693,
+            "raw_prediction_max": 9.034119240432814,
+            "predicted_min": 2297.280341121823,
+            "predicted_max": 8383.325589504677,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 13931.448923224998
+          }
+        ]
+      },
+      {
+        "name": "ridge_log_a1",
+        "method": "ridge",
+        "alpha": 1,
+        "scale": "log",
+        "cv_mae_mean": 2948442.461740496,
+        "cv_mae_sd": 5885035.480729563,
+        "cv_medae_mean": 3427.6669433873963,
+        "fold_mae": [
+          7796.629202201981,
+          4374.265710606423,
+          11775995.427478727,
+          5603.524570448014
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 16,
+            "actual_min": 676.7548945385934,
+            "actual_max": 54578.41727461446,
+            "raw_prediction_min": 7.266916193145264,
+            "raw_prediction_max": 10.213747020019394,
+            "predicted_min": 1431.127232586478,
+            "predicted_max": 27274.578490286454,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 51540.59772135445
+          },
+          {
+            "fold": 2,
+            "n": 16,
+            "actual_min": 358.6063129024077,
+            "actual_max": 21636.666412211198,
+            "raw_prediction_min": 4.862264784793457,
+            "raw_prediction_max": 9.468039775429965,
+            "predicted_min": 128.31674530694985,
+            "predicted_max": 12938.498033169815,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 17636.314147904737
+          },
+          {
+            "fold": 3,
+            "n": 15,
+            "actual_min": 0.0,
+            "actual_max": 51233.74938722348,
+            "raw_prediction_min": 6.055943631633637,
+            "raw_prediction_max": 18.989319816134138,
+            "predicted_min": 425.6413077992125,
+            "predicted_max": 176586219.4396173,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 1,
+            "largest_absolute_error": 176550158.3289303
+          },
+          {
+            "fold": 4,
+            "n": 15,
+            "actual_min": 774.5788880928152,
+            "actual_max": 20858.738561239523,
+            "raw_prediction_min": 6.958191753520876,
+            "raw_prediction_max": 9.725116597620195,
+            "predicted_min": 1050.730049596316,
+            "predicted_max": 16731.640263202004,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 14197.127380876358
+          }
+        ]
+      },
+      {
+        "name": "huber_log_a1",
+        "method": "huber",
+        "alpha": 1,
+        "scale": "log",
+        "cv_mae_mean": 8091537.458108158,
+        "cv_mae_sd": 16170671.882731842,
+        "cv_medae_mean": 3218.4152894213325,
+        "fold_mae": [
+          8800.015890205303,
+          5392.866404316224,
+          32347545.11818854,
+          4411.831949569167
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 16,
+            "actual_min": 676.7548945385934,
+            "actual_max": 54578.41727461446,
+            "raw_prediction_min": 7.520650157326121,
+            "raw_prediction_max": 8.934046797316647,
+            "predicted_min": 1844.7669429310336,
+            "predicted_max": 7584.901952097984,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 52733.65033168343
+          },
+          {
+            "fold": 2,
+            "n": 16,
+            "actual_min": 358.6063129024077,
+            "actual_max": 21636.666412211198,
+            "raw_prediction_min": 7.281309577109116,
+            "raw_prediction_max": 10.149177237463977,
+            "predicted_min": 1451.8894505776354,
+            "predicted_max": 25569.055465960668,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 17917.817402703484
+          },
+          {
+            "fold": 3,
+            "n": 15,
+            "actual_min": 0.0,
+            "actual_max": 51233.74938722348,
+            "raw_prediction_min": 5.7726354697489555,
+            "raw_prediction_max": 21.39194313427567,
+            "predicted_min": 320.38361430330167,
+            "predicted_max": 485165194.4097903,
+            "count_log_clipped": 1,
+            "count_predicted_above_training_max": 1,
+            "largest_absolute_error": 485129133.29910326
+          },
+          {
+            "fold": 4,
+            "n": 15,
+            "actual_min": 774.5788880928152,
+            "actual_max": 20858.738561239523,
+            "raw_prediction_min": 6.799042263133411,
+            "raw_prediction_max": 9.374745778762836,
+            "predicted_min": 895.9878018468708,
+            "predicted_max": 11785.920680077868,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 12751.080768796848
+          }
+        ]
+      },
+      {
+        "name": "huber_log_a0.1",
+        "method": "huber",
+        "alpha": 0.1,
+        "scale": "log",
+        "cv_mae_mean": 8091988.146653453,
+        "cv_mae_sd": 16169845.560154594,
+        "cv_medae_mean": 3657.6800814200296,
+        "fold_mae": [
+          9640.776268496269,
+          5351.2882393063155,
+          32346756.327446334,
+          6204.194659674859
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 16,
+            "actual_min": 676.7548945385934,
+            "actual_max": 54578.41727461446,
+            "raw_prediction_min": 7.022907986151333,
+            "raw_prediction_max": 9.393515970438894,
+            "predicted_min": 1121.0447687702044,
+            "predicted_max": 12009.252877594237,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 53254.50835553618
+          },
+          {
+            "fold": 2,
+            "n": 16,
+            "actual_min": 358.6063129024077,
+            "actual_max": 21636.666412211198,
+            "raw_prediction_min": 4.062608857957764,
+            "raw_prediction_max": 9.929299799522049,
+            "predicted_min": 57.12575528407752,
+            "predicted_max": 20521.965359112666,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 19907.638726040896
+          },
+          {
+            "fold": 3,
+            "n": 15,
+            "actual_min": 0.0,
+            "actual_max": 51233.74938722348,
+            "raw_prediction_min": 5.6902513446555245,
+            "raw_prediction_max": 24.87060639897443,
+            "predicted_min": 294.96800126783074,
+            "predicted_max": 485165194.4097903,
+            "count_log_clipped": 1,
+            "count_predicted_above_training_max": 1,
+            "largest_absolute_error": 485129133.29910326
+          },
+          {
+            "fold": 4,
+            "n": 15,
+            "actual_min": 774.5788880928152,
+            "actual_max": 20858.738561239523,
+            "raw_prediction_min": 6.420117053875493,
+            "raw_prediction_max": 9.937937574909363,
+            "predicted_min": 613.0749897762045,
+            "predicted_max": 20700.005954519485,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 16528.258242271582
+          }
+        ]
+      },
+      {
+        "name": "quantile_log_a0.01",
+        "method": "quantile",
+        "alpha": 0.01,
+        "scale": "log",
+        "cv_mae_mean": 8094771.217840684,
+        "cv_mae_sd": 16168763.908520142,
+        "cv_medae_mean": 4064.6035794072277,
+        "fold_mae": [
+          8957.932337661468,
+          13385.612232633794,
+          32347916.872264802,
+          8824.45452763668
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 16,
+            "actual_min": 676.7548945385934,
+            "actual_max": 54578.41727461446,
+            "raw_prediction_min": 7.065653496654198,
+            "raw_prediction_max": 9.0638599347958,
+            "predicted_min": 1170.0469967521942,
+            "predicted_max": 8636.4262941074,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 53408.37027786227
+          },
+          {
+            "fold": 2,
+            "n": 16,
+            "actual_min": 358.6063129024077,
+            "actual_max": 21636.666412211198,
+            "raw_prediction_min": 7.983006892733611,
+            "raw_prediction_max": 11.663093214688597,
+            "predicted_min": 2929.73021979514,
+            "predicted_max": 116201.91564431957,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 1,
+            "largest_absolute_error": 107069.31433562323
+          },
+          {
+            "fold": 3,
+            "n": 15,
+            "actual_min": 0.0,
+            "actual_max": 51233.74938722348,
+            "raw_prediction_min": 3.8745166124578283,
+            "raw_prediction_max": 22.880247466827967,
+            "predicted_min": 47.1594130033591,
+            "predicted_max": 485165194.4097903,
+            "count_log_clipped": 1,
+            "count_predicted_above_training_max": 1,
+            "largest_absolute_error": 485129133.29910326
+          },
+          {
+            "fold": 4,
+            "n": 15,
+            "actual_min": 774.5788880928152,
+            "actual_max": 20858.738561239523,
+            "raw_prediction_min": 6.397927478245974,
+            "raw_prediction_max": 11.102444309003966,
+            "predicted_min": 599.5989926125092,
+            "predicted_max": 66332.10076678227,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 1,
+            "largest_absolute_error": 64850.340367838064
+          }
+        ]
+      }
+    ],
+    "chosen": "quantile_log_a0.1",
+    "cv_improvement_vs_existing": 0.9818140976096081,
+    "holdout_selected_mae": 5534.636604410345,
+    "holdout_existing_mae": 4994.2347638847095,
+    "holdout_selected_r2": -0.05269774199230204,
+    "holdout_existing_r2": -0.2031479463972372,
+    "holdout_selected_medae": 3108.0330319024524
+  },
+  "lump_sum_or_settlement": {
+    "period": "lump_sum_or_settlement",
+    "train_n": 47,
+    "test_n": 13,
+    "cpi_2026_provisional": 238.6539723548226,
+    "training_median": 973407.799524511,
+    "cv_median_baseline_mae": 2165872.3800913678,
+    "candidates": [
+      {
+        "name": "quantile_log_a0.1",
+        "method": "quantile",
+        "alpha": 0.1,
+        "scale": "log",
+        "cv_mae_mean": 2168469.406809979,
+        "cv_mae_sd": 2559110.1116957315,
+        "cv_medae_mean": 618887.1318388655,
+        "fold_mae": [
+          530621.6594475001,
+          948227.2432520372,
+          1210962.6091510009,
+          5984066.115389379
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 12,
+            "actual_min": 213198.96110266575,
+            "actual_max": 2884888.854961493,
+            "raw_prediction_min": 13.792479816171804,
+            "raw_prediction_max": 13.792479816171804,
+            "predicted_min": 977231.4414345922,
+            "predicted_max": 977231.4414345922,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 1907657.4135269008
+          },
+          {
+            "fold": 2,
+            "n": 12,
+            "actual_min": 25599.71238545568,
+            "actual_max": 3260499.3160813893,
+            "raw_prediction_min": 13.788559416328827,
+            "raw_prediction_max": 13.788559416328827,
+            "predicted_min": 973407.7995245102,
+            "predicted_max": 973407.7995245102,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 2287091.516556879
+          },
+          {
+            "fold": 3,
+            "n": 12,
+            "actual_min": 97723.14414345931,
+            "actual_max": 6952912.853746507,
+            "raw_prediction_min": 13.788559416328827,
+            "raw_prediction_max": 13.788559416328827,
+            "predicted_min": 973407.7995245102,
+            "predicted_max": 973407.7995245102,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 5979505.054221997
+          },
+          {
+            "fold": 4,
+            "n": 11,
+            "actual_min": 172378.25436864528,
+            "actual_max": 54781480.72435529,
+            "raw_prediction_min": 13.663686730139187,
+            "raw_prediction_max": 13.788559416328829,
+            "predicted_min": 859138.6239056018,
+            "predicted_max": 973407.7995245119,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 53808072.92483078
+          }
+        ]
+      },
+      {
+        "name": "ridge_log_a100",
+        "method": "ridge",
+        "alpha": 100,
+        "scale": "log",
+        "cv_mae_mean": 2180380.8029272314,
+        "cv_mae_sd": 2562010.5296496353,
+        "cv_medae_mean": 624560.40220432,
+        "fold_mae": [
+          541123.8663466171,
+          938991.2502503019,
+          1242214.9853099927,
+          5999193.109802015
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 12,
+            "actual_min": 213198.96110266575,
+            "actual_max": 2884888.854961493,
+            "raw_prediction_min": 13.409428973943136,
+            "raw_prediction_max": 13.785396085487696,
+            "predicted_min": 666254.8093795067,
+            "predicted_max": 970333.4506029895,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 1951506.1985774762
+          },
+          {
+            "fold": 2,
+            "n": 12,
+            "actual_min": 25599.71238545568,
+            "actual_max": 3260499.3160813893,
+            "raw_prediction_min": 13.680075946902974,
+            "raw_prediction_max": 13.830347363590924,
+            "predicted_min": 873335.2675931185,
+            "predicted_max": 1014946.4173919748,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 2281338.0981530664
+          },
+          {
+            "fold": 3,
+            "n": 12,
+            "actual_min": 97723.14414345931,
+            "actual_max": 6952912.853746507,
+            "raw_prediction_min": 13.264289868518292,
+            "raw_prediction_max": 13.877417918982923,
+            "predicted_min": 576244.9635127144,
+            "predicted_max": 1063862.7849055333,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 6051064.953281639
+          },
+          {
+            "fold": 4,
+            "n": 11,
+            "actual_min": 172378.25436864528,
+            "actual_max": 54781480.72435529,
+            "raw_prediction_min": 13.362746640785852,
+            "raw_prediction_max": 13.590228344070201,
+            "predicted_min": 635867.2334744299,
+            "predicted_max": 798289.8981835948,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 53983190.826171696
+          }
+        ]
+      },
+      {
+        "name": "ridge_log_a1",
+        "method": "ridge",
+        "alpha": 1,
+        "scale": "log",
+        "cv_mae_mean": 2184864.313270239,
+        "cv_mae_sd": 2613046.194571762,
+        "cv_medae_mean": 642020.8210209401,
+        "fold_mae": [
+          493827.3898148591,
+          848930.0421998916,
+          1325753.4756601225,
+          6070946.345406082
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 12,
+            "actual_min": 213198.96110266575,
+            "actual_max": 2884888.854961493,
+            "raw_prediction_min": 12.740988923095825,
+            "raw_prediction_max": 14.380829363600157,
+            "predicted_min": 341460.05930296244,
+            "predicted_max": 1760007.7940130166,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 1563630.13894166
+          },
+          {
+            "fold": 2,
+            "n": 12,
+            "actual_min": 25599.71238545568,
+            "actual_max": 3260499.3160813893,
+            "raw_prediction_min": 13.281260377888701,
+            "raw_prediction_max": 14.236426232198493,
+            "predicted_min": 586107.6013292263,
+            "predicted_max": 1523354.814846792,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 1822886.3624894216
+          },
+          {
+            "fold": 3,
+            "n": 12,
+            "actual_min": 97723.14414345931,
+            "actual_max": 6952912.853746507,
+            "raw_prediction_min": 10.672842581434582,
+            "raw_prediction_max": 14.652693045576429,
+            "predicted_min": 43166.47432173376,
+            "predicted_max": 2309848.7695965404,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 6118131.162372563
+          },
+          {
+            "fold": 4,
+            "n": 11,
+            "actual_min": 172378.25436864528,
+            "actual_max": 54781480.72435529,
+            "raw_prediction_min": 12.394843827076803,
+            "raw_prediction_max": 14.089286782282203,
+            "predicted_min": 241551.9124086738,
+            "predicted_max": 1314919.5220768836,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 53872658.393341884
+          }
+        ]
+      },
+      {
+        "name": "ridge_log_a10",
+        "method": "ridge",
+        "alpha": 10,
+        "scale": "log",
+        "cv_mae_mean": 2187379.225944479,
+        "cv_mae_sd": 2579714.424363891,
+        "cv_medae_mean": 620748.9580024895,
+        "fold_mae": [
+          520312.05998289236,
+          898690.6300765983,
+          1303403.7838232338,
+          6027110.429895191
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 12,
+            "actual_min": 213198.96110266575,
+            "actual_max": 2884888.854961493,
+            "raw_prediction_min": 13.089868323184449,
+            "raw_prediction_max": 14.104176595229552,
+            "predicted_min": 484012.61873466684,
+            "predicted_max": 1334644.9320875863,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 1628889.2589082601
+          },
+          {
+            "fold": 2,
+            "n": 12,
+            "actual_min": 25599.71238545568,
+            "actual_max": 3260499.3160813893,
+            "raw_prediction_min": 13.440588264700725,
+            "raw_prediction_max": 14.024275107922335,
+            "predicted_min": 687341.6878729208,
+            "predicted_max": 1232153.8534623382,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 2092577.7596220141
+          },
+          {
+            "fold": 3,
+            "n": 12,
+            "actual_min": 97723.14414345931,
+            "actual_max": 6952912.853746507,
+            "raw_prediction_min": 11.599782328512138,
+            "raw_prediction_max": 14.249055287217544,
+            "predicted_min": 109073.05438060373,
+            "predicted_max": 1542715.354584947,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 6005721.344580951
+          },
+          {
+            "fold": 4,
+            "n": 11,
+            "actual_min": 172378.25436864528,
+            "actual_max": 54781480.72435529,
+            "raw_prediction_min": 12.979994479833238,
+            "raw_prediction_max": 13.71086254848516,
+            "predicted_min": 433649.62606990564,
+            "predicted_max": 900640.4840643825,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 53902149.561624244
+          }
+        ]
+      },
+      {
+        "name": "huber_log_a1",
+        "method": "huber",
+        "alpha": 1,
+        "scale": "log",
+        "cv_mae_mean": 2267721.684562057,
+        "cv_mae_sd": 2581295.8342285906,
+        "cv_medae_mean": 697465.7508577926,
+        "fold_mae": [
+          555788.4997661907,
+          918913.6952277581,
+          1500789.7161708034,
+          6095394.827083475
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 12,
+            "actual_min": 213198.96110266575,
+            "actual_max": 2884888.854961493,
+            "raw_prediction_min": 12.316751167062948,
+            "raw_prediction_max": 14.271171185606015,
+            "predicted_min": 223406.14923736418,
+            "predicted_max": 1577213.9907585445,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 2095210.3619588744
+          },
+          {
+            "fold": 2,
+            "n": 12,
+            "actual_min": 25599.71238545568,
+            "actual_max": 3260499.3160813893,
+            "raw_prediction_min": 13.073480675548351,
+            "raw_prediction_max": 14.294154818506403,
+            "predicted_min": 476145.4126642544,
+            "predicted_max": 1613883.9108842271,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 1873052.6535152479
+          },
+          {
+            "fold": 3,
+            "n": 12,
+            "actual_min": 97723.14414345931,
+            "actual_max": 6952912.853746507,
+            "raw_prediction_min": 10.651341276588337,
+            "raw_prediction_max": 14.923155287681379,
+            "predicted_min": 42248.224457795484,
+            "predicted_max": 3027219.0699232714,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 6402122.692839762
+          },
+          {
+            "fold": 4,
+            "n": 11,
+            "actual_min": 172378.25436864528,
+            "actual_max": 54781480.72435529,
+            "raw_prediction_min": 12.125767702549268,
+            "raw_prediction_max": 14.148767667184377,
+            "predicted_min": 184565.97829045609,
+            "predicted_max": 1395505.049820805,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 53894546.25793208
+          }
+        ]
+      },
+      {
+        "name": "quantile_log_a0.01",
+        "method": "quantile",
+        "alpha": 0.01,
+        "scale": "log",
+        "cv_mae_mean": 2327717.3159794803,
+        "cv_mae_sd": 2481561.155507057,
+        "cv_medae_mean": 759228.3458043636,
+        "fold_mae": [
+          729860.3362431781,
+          1131633.2848796349,
+          1423859.6897888035,
+          6025515.953006305
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 12,
+            "actual_min": 213198.96110266575,
+            "actual_max": 2884888.854961493,
+            "raw_prediction_min": 11.489903932817324,
+            "raw_prediction_max": 14.749810108422794,
+            "predicted_min": 97723.14414345927,
+            "predicted_max": 2545428.8879637215,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 1674101.7289028754
+          },
+          {
+            "fold": 2,
+            "n": 12,
+            "actual_min": 25599.71238545568,
+            "actual_max": 3260499.3160813893,
+            "raw_prediction_min": 13.46165390892553,
+            "raw_prediction_max": 15.873526720979964,
+            "predicted_min": 701974.58901858,
+            "predicted_max": 7830419.114361717,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 4923779.778271342
+          },
+          {
+            "fold": 3,
+            "n": 12,
+            "actual_min": 97723.14414345931,
+            "actual_max": 6952912.853746507,
+            "raw_prediction_min": 12.60747289571396,
+            "raw_prediction_max": 15.204458356266128,
+            "predicted_min": 298782.0177283915,
+            "predicted_max": 4010626.842648633,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 5012247.427427456
+          },
+          {
+            "fold": 4,
+            "n": 11,
+            "actual_min": 172378.25436864528,
+            "actual_max": 54781480.72435529,
+            "raw_prediction_min": 12.269985788828528,
+            "raw_prediction_max": 14.209673320056565,
+            "predicted_min": 213198.9611026659,
+            "predicted_max": 1483140.928313909,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 53560841.66450588
+          }
+        ]
+      },
+      {
+        "name": "huber_log_a0.1",
+        "method": "huber",
+        "alpha": 0.1,
+        "scale": "log",
+        "cv_mae_mean": 2541657.0414536903,
+        "cv_mae_sd": 2460710.93826774,
+        "cv_medae_mean": 833566.5546504373,
+        "fold_mae": [
+          987028.10508451,
+          1631659.948831071,
+          1336436.6310134765,
+          6211503.480885705
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 12,
+            "actual_min": 213198.96110266575,
+            "actual_max": 2884888.854961493,
+            "raw_prediction_min": 10.705159580933723,
+            "raw_prediction_max": 14.658089809094339,
+            "predicted_min": 44584.30417616965,
+            "predicted_max": 2322348.1804099316,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 2840304.5507853236
+          },
+          {
+            "fold": 2,
+            "n": 12,
+            "actual_min": 25599.71238545568,
+            "actual_max": 3260499.3160813893,
+            "raw_prediction_min": 11.310581023069618,
+            "raw_prediction_max": 15.687702799403153,
+            "predicted_min": 81680.35346768748,
+            "predicted_max": 6502534.914045286,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 6224418.399895426
+          },
+          {
+            "fold": 3,
+            "n": 12,
+            "actual_min": 97723.14414345931,
+            "actual_max": 6952912.853746507,
+            "raw_prediction_min": 8.839255388216234,
+            "raw_prediction_max": 13.644732989487505,
+            "predicted_min": 6898.853015218661,
+            "predicted_max": 843008.0644091932,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 6907435.326292879
+          },
+          {
+            "fold": 4,
+            "n": 11,
+            "actual_min": 172378.25436864528,
+            "actual_max": 54781480.72435529,
+            "raw_prediction_min": 11.32946259553779,
+            "raw_prediction_max": 14.02987036070946,
+            "predicted_min": 83237.27820092313,
+            "predicted_max": 1239067.3948093278,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 54349326.32293247
+          }
+        ]
+      },
+      {
+        "name": "ridge_raw_a10",
+        "method": "ridge",
+        "alpha": 10,
+        "scale": "raw",
+        "cv_mae_mean": 3463704.718387589,
+        "cv_mae_sd": 1974829.9381144224,
+        "cv_medae_mean": 1911009.9345992778,
+        "fold_mae": [
+          4117445.307234185,
+          1371945.5960299287,
+          2470540.1886805063,
+          5894887.7816057345
+        ],
+        "fold_diagnostics": [
+          {
+            "fold": 1,
+            "n": 12,
+            "actual_min": 213198.96110266575,
+            "actual_max": 2884888.854961493,
+            "raw_prediction_min": 553623.8978582262,
+            "raw_prediction_max": 8260989.837807281,
+            "predicted_min": 553623.8978582262,
+            "predicted_max": 8260989.837807281,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 7526410.034635271
+          },
+          {
+            "fold": 2,
+            "n": 12,
+            "actual_min": 25599.71238545568,
+            "actual_max": 3260499.3160813893,
+            "raw_prediction_min": -3752060.256665921,
+            "raw_prediction_max": 5064250.8246737635,
+            "predicted_min": 0.0,
+            "predicted_max": 5064250.8246737635,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 4806388.336986466
+          },
+          {
+            "fold": 3,
+            "n": 12,
+            "actual_min": 97723.14414345931,
+            "actual_max": 6952912.853746507,
+            "raw_prediction_min": -16144308.397234216,
+            "raw_prediction_max": 4599466.231909444,
+            "predicted_min": 0.0,
+            "predicted_max": 4599466.231909444,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 6370743.468937434
+          },
+          {
+            "fold": 4,
+            "n": 11,
+            "actual_min": 172378.25436864528,
+            "actual_max": 54781480.72435529,
+            "raw_prediction_min": 505999.7472712023,
+            "raw_prediction_max": 2055048.823653207,
+            "predicted_min": 505999.7472712023,
+            "predicted_max": 2055048.823653207,
+            "count_log_clipped": 0,
+            "count_predicted_above_training_max": 0,
+            "largest_absolute_error": 53810371.0427577
+          }
+        ]
+      }
+    ],
+    "chosen": "ridge_log_a10",
+    "cv_improvement_vs_existing": 0.00864496604439264,
+    "holdout_selected_mae": 658758.292999198,
+    "holdout_existing_mae": 658758.292999198,
+    "holdout_selected_r2": 0.00672052519907862,
+    "holdout_existing_r2": 0.00672052519907862,
+    "holdout_selected_medae": 507705.15338594664
+  }
+}
